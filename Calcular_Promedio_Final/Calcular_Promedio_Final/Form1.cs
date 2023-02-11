@@ -22,7 +22,6 @@ namespace Calcular_Promedio_Final
             if (PrimerParcialtextBox.Text == "")
             {
                 errorProvider1.SetError(PrimerParcialtextBox, "Ingrese un Valor");
-                errorProvider1.Clear();
                 return;
 
             }
@@ -49,20 +48,20 @@ namespace Calcular_Promedio_Final
             decimal Parcial3 = Convert.ToDecimal(TercerParcialtextBox.Text);
             decimal Parcial4 = Convert.ToDecimal(CuartoParcialtextBox.Text);
 
-            decimal Promedio = await CalcularPromedioAsync(Parcial1, Parcial2, Parcial3, Parcial4);
+            decimal Promedio_Final = await CalcularPromedioAsync(Parcial1, Parcial2, Parcial3, Parcial4);
 
-            MessageBox.Show("Tiene un Promedio de: " + Promedio, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        
+            MessageBox.Show("Tiene un Promedio de: " + Promedio_Final, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private async Task<decimal> CalcularPromedioAsync(decimal num1, decimal num2, decimal num3, decimal num4)
         {
-            decimal promedio = await Task.Run(() =>
+            decimal Promedio = await Task.Run(() =>
             {
                 return (num1 + num2 + num3 + num4) / 4;
             });
 
-            return promedio;
+            return Promedio;
         }
     }
 }

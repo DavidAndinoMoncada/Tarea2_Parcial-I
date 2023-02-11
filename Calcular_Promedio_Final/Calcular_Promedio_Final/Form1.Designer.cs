@@ -142,10 +142,10 @@
             // 
             // CalcularPromedioAsyncronobutton
             // 
-            this.CalcularPromedioAsyncronobutton.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.CalcularPromedioAsyncronobutton.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CalcularPromedioAsyncronobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalcularPromedioAsyncronobutton.ForeColor = System.Drawing.SystemColors.Window;
-            this.CalcularPromedioAsyncronobutton.Location = new System.Drawing.Point(331, 418);
+            this.CalcularPromedioAsyncronobutton.ForeColor = System.Drawing.Color.Black;
+            this.CalcularPromedioAsyncronobutton.Location = new System.Drawing.Point(323, 411);
             this.CalcularPromedioAsyncronobutton.Name = "CalcularPromedioAsyncronobutton";
             this.CalcularPromedioAsyncronobutton.Size = new System.Drawing.Size(140, 72);
             this.CalcularPromedioAsyncronobutton.TabIndex = 10;
